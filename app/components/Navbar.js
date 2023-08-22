@@ -26,18 +26,18 @@ const Navbar = () => {
     }
     return (
         <>
-            <nav className='flex h-[7vh] justify-between items-center px-8 py-3 border-b-2 border-b-slate-300'>
+            <nav className='flex h-[7vh] justify-between items-center px-8 py-3 border-b-2 border-b-slate-300 relative'>
                 <div>
                     {/* <Image src={logo} /> */}
                     <h1 className='font-black text-4xl capitalize'>logo</h1>
                 </div>
                 <div className='lg:flex justify-between items-center gap-8 hidden '>
-                    <div className='flex justify-start items-center gap-2  relative'
+                    <div className='flex justify-start items-center gap-2 '
                         onMouseEnter={() => setiscategory(true)}
                     >
                         <h5 className='text-base font-light tracking-wider capitalize cursor-pointer'>Category</h5>
                         <Image src={downarr} className='h-[20px] w-[12px] cursor-pointer' alt='' />
-                        <div className='absolute bottom-[-362px] left-[-555px]'>
+                        <div className='absolute bottom-[-342px] left-[0] z-[10000] bg-white'>
                             {iscategory && <CategoryModal setiscategory={setiscategory} />}
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 </div>
             </nav>
             {ismenu &&
-                <div className='md:hidden block transition duration-1000'>
+                <div className='md:hidden block transition duration-1000 '>
                     <MenuModal />
                 </div>
             }

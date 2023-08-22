@@ -11,7 +11,7 @@ import mail from "@/public/Svg/mail.svg"
 
 const MenuModal = () => {
     return (
-        <div className='h-[93vh] bg-black bg-opacity-10 transition-transform duration-1000 flex flex-col justify-between sm:px-10 px-6 sm:py-8'>
+        <div className='h-[93vh] bg-black bg-opacity-10 w-[100vw] transition-transform duration-1000 flex flex-col justify-between sm:px-10 px-6 sm:py-8 '>
             <div>
                 <div className='relative my-6 sm:hidden block'>
                     <input type="text" name="" id="" className='w-full py-2 px-10 rounded-md border border-gray-400 bg-transparent' placeholder='search' />
