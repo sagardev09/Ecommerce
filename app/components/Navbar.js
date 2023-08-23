@@ -73,7 +73,7 @@ const Navbar = () => {
                 </div>
             </nav>
             {ismenu &&
-                <div className='md:hidden block transition duration-1000 '>
+                <div className='md:hidden block transition duration-1000'>
                     <MenuModal />
                 </div>
             }

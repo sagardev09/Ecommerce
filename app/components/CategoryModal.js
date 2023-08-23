@@ -5,7 +5,7 @@ import img2 from "@/public/Pics/cat2.png"
 
 const CategoryModal = ({ setiscategory }) => {
     return (
-        <div className='flex justify-between items-center px-8 py-6  w-[100vw] bg-slate-300 bg-opacity-20' onMouseEnter={() => setiscategory(true)} onMouseLeave={() => setiscategory(false)}>
+        <div className='flex justify-between items-center px-8 py-6   w-[100vw] bg-slate-300 bg-opacity-20' onMouseEnter={() => setiscategory(true)} onMouseLeave={() => setiscategory(false)}>
             <div className='flex flex-col gap-8'>
                 <h5 className='cursor-pointer text-base text-black capitalize hover:border-b-[1px] hover:border-b-black font-medium tracking-wider'>Electronics</h5>
                 <h5 className='cursor-pointer text-base capitalize hover:border-b-[1px] hover:border-b-black font-medium tracking-wider'>Clothing & Accessories</h5>
