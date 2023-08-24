@@ -12,9 +12,9 @@ export default function Home() {
       <div className='lg:px-14  sm:px-8 px-6 py-8'>
         <ShopByCategory />
       </div>
-      {/* <div className='lg:px-14  sm:px-8 px-6 pb-8'>
+      <div className='lg:px-14  sm:px-8 px-6 pb-8'>
         <ElectronicsCategory />
-      </div> */}
+      </div>
     </main>
   )
 }

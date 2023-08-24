@@ -2,8 +2,10 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import arr from "@/public/Svg/Sliderarr.svg"
+import { catData } from '@/data/CategoriesData'
 
 const ElectronicsCategory = () => {
+    const [list, setList] = useState(catData);
 
     return (
         <div className=''>
@@ -16,14 +18,26 @@ const ElectronicsCategory = () => {
                     <Image src={arr} alt='' className="transform scale-x-[-1]" />
                 </div>
             </div>
-            {/* <div className='grid grid-cols-6 gap-4 py-4 overflow-x-scroll overflow-y-hidden w-full'>
-                <div className='bg-slate-700 rounded-xl xl:col-span-2 sm:col-span-3 col-span-6  lg:h-[300px] md:h-[250px] sm:h-[200px] h-[180px]'></div>
-                <div className='bg-slate-700 rounded-xl xl:col-span-2 sm:col-span-3 col-span-6 lg:h-[300px] md:h-[250px] sm:h-[200px] h-[180px] '></div>
-                <div className='bg-slate-700 rounded-xl xl:col-span-2 sm:col-span-3 col-span-6 lg:h-[300px] md:h-[250px] sm:h-[200px] h-[180px]'></div>
-                <div className='bg-slate-700 rounded-xl xl:col-span-2 sm:col-span-3 col-span-6 lg:h-[300px] md:h-[250px] sm:h-[200px] h-[180px]'></div>
-                <div className='bg-slate-700 rounded-xl xl:col-span-2 sm:col-span-3 col-span-6 lg:h-[300px] md:h-[250px] sm:h-[200px] h-[180px]'></div>
-                <div className='bg-slate-700 rounded-xl xl:col-span-2 sm:col-span-3 col-span-6 lg:h-[300px] md:h-[250px] sm:h-[200px] h-[180px]'></div>
-            </div> */}
+
+            <div className='flex overflow-x-auto p-3 bg-blue-100 w-full'>
+                <div className='flex gap-5' style={{ minWidth: 'fit-content' }}>
+                    {
+                        list.map((item, index) => {
+                            return (
+                                <div key={index} className='w-[420px] h-[200px] bg-pink-300'>
+                                    {item.title}
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+
+
+
+
+
+
 
             <div className='flex gap-4  overflow-x-scroll border-8 border-red-800 max-w-fit' >
                 <div className='bg-black h-[300px] w-[500px] text-white'>hi</div>
