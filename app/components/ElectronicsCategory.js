@@ -7,11 +7,12 @@ import { catData } from '@/data/CategoriesData'
 const ElectronicsCategory = () => {
     const [list, setList] = useState(catData);
 
+
     return (
         <div className=' flex flex-col gap-7'>
             <div className='flex justify-between items-center'>
                 <div className='border-b-2 border-b-slate-600'>
-                    <h5 className='font-bold lg:text-2xl md:text-xl sm:text-lg text-base'>Shop From Top Categories</h5>
+                    <h5 className='font-bold lg:text-2xl md:text-xl sm:text-lg text-base'>Shop Latest Smartphones</h5>
                 </div>
                 <div className='flex justify-between items-center gap-2 cursor-pointer'>
                     <h5 className='lg:text-lg md:text-base sm:text-sm  font-light'>View All</h5>

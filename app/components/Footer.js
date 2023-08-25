@@ -9,7 +9,7 @@ import mail from "@/public/Svg/mail.svg"
 
 const Footer = () => {
     return (
-        <div className='lg:flex lg:flex-col lg:px-12 lg:py-16 md:px-10 md:py-12 sm:px-8 sm:py-10 px-6 py-6 overflow-hidden'>
+        <div className='lg:flex lg:flex-col lg:px-12 lg:py-16 md:px-10 md:py-12 sm:px-8 sm:py-10 px-6 py-6 overflow-hidden border-t border-black border-opacity-30'>
             <div className='sm:flex sm:flex-row sm:justify-between sm:items-center lg:gap-32 md:gap-7 flex flex-col sm:gap-12 gap-6'>
                 <div className='flex-1 flex flex-col justify-start gap-4'>
                     <div><h1 className='text-6xl font-black capitalize'>logo</h1></div>

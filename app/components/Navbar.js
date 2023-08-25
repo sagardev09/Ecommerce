@@ -56,7 +56,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex justify-between items-center gap-8'>
                     <div className='relative'>
-                        <input type="text" name="" id="" placeholder='search' className='border-b-[1px] focus: outline-none pr-4 py-2 placeholder:text-base border-b-slate-600 w-[300px] sm:block hidden' value={search} onChange={(e) => setsearch(e.target.value)} />
+                        <input type="text" name="" id="" placeholder='search' className='border-b-[1px] focus: outline-none pr-4 py-2 placeholder:text-base placeholder:capitalize border-b-slate-600 w-[300px] sm:block hidden' value={search} onChange={(e) => setsearch(e.target.value)} />
                         <Image src={Search} className='absolute bottom-[10px] right-0 cursor-pointer' alt='icon' onClick={handleSearch} />
                     </div>
                     <div>
