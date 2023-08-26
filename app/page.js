@@ -4,6 +4,7 @@ import ShopByCategory from './components/ShopByCategory'
 import ElectronicsCategory from './components/ElectronicsCategory'
 import HomeProduct from './components/HomeProduct'
 
+
 export default function Home() {
   return (
     <main className=''>
