@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import img from "@/public/Pics/laptop2.webp";
 import img1 from "@/public/Pics/prodimg1.jpg";
@@ -297,7 +298,9 @@ const Page = () => {
                     </div>
                 </div>
                 <div className='flex justify-start items-center gap-6'>
-                    <button className='px-6 w-fit p-2 border border-black font-semibold capitalize bg-black text-white'>add to cart</button>
+                    <Link href={"/addtocart"}>
+                        <button className='px-6 w-fit p-2 border border-black font-semibold capitalize bg-black text-white'>add to cart</button>
+                    </Link>
                     <button className='px-6 w-fit p-2 border border-black font-semibold capitalize bg-black text-white'>add to wishlist</button>
                 </div>
             </div>
